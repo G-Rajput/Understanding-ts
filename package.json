@@ -7,12 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "lite-server"
   },
-
-  "keywords": [
-    "typescript",
-    "learning"
-  ],
-  "author": "Govind Rajput",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.6.1"
