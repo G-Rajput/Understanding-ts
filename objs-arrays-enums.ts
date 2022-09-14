@@ -1,48 +1,47 @@
 // const person: {
-//     name: string;
-//     age: number;
+//   name: string;
+//   age: number;
 // } = {
-//     const person: {
-//         name:  string;
-//         age: number;
-//         hobbies: string[];
-//         role: [number, string]
-//     } = { 
-//     name: 'Govind Rajput',
-//     age: 24 ,
-//     hobbies: ['Sports' , 'Coocking'],
-//     role: [2, 'author']
-// }
+// const person: {
+//   name: string;
+//   age: number;
+//   hobbies: string[];
+//   role: [number, string];
+// } = {
+//   name: 'Maximilian',
+//   age: 30,
+//   hobbies: ['Sports', 'Cooking'],
+//   role: [2, 'author']
+// };
 
 // const ADMIN = 0;
-// const READ_ONLY =1;
-// const AUTHER = 2;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
 
-enum Role { ADMIN, READ_ONLY, AUTHER}
+enum Role { ADMIN = 'ADMIN', READ_ONLY = 100, AUTHOR = 'AUTHOR' };
 
-const person = { 
-name: 'Govind Rajput',
-age: 24 ,
-hobbies: ['Sports' , 'Coocking'],
-role: Role.ADMIN
-}
-
+const person = {
+  name: 'Maximilian',
+  age: 30,
+  hobbies: ['Sports', 'Cooking'],
+  role: Role.ADMIN
+};
 
 // person.role.push('admin');
 // person.role[1] = 10;
 
-// person.role = [0, 'admin', 'user']
-
-console.log(person.name)
+// person.role = [0, 'admin', 'user'];
 
 let favoriteActivities: string[];
-favoriteActivities = ['Sports']
+favoriteActivities = ['Sports'];
+
+console.log(person.name);
 
 for (const hobby of person.hobbies) {
-    console.log(hobby.toUpperCase())
-    //console.log(hobby.map()); // !!! ERROR !!!
+  console.log(hobby.toUpperCase());
+  // console.log(hobby.map()); // !!! ERROR !!!
 }
 
-if (person.role === Role.AUTHER) {
-    console.log('is auther....')
+if (person.role === Role.AUTHOR) {
+  console.log('is author');
 }
